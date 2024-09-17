@@ -42,6 +42,8 @@ body {
     background: linear-gradient(90deg, #FDA109 0%, #F42C03 100%);
     color: white;
     border-radius: var(--radius);
+
+    transition: transform 0.25s ease;
 }
 
 .title_main {
@@ -62,10 +64,4 @@ body {
     color: #fff;
     border-radius: var(--radius);
     background-color: var(--color-dark-orange);
-}
-
-.btn,
-.btn_orange{
-    opacity: 1;
-    transition: opacity 300ms linear;
 }

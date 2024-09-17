@@ -11,9 +11,18 @@
         color: var(--color-orange);
     }
 
-    .btn:hover,
+    .btn:hover{
+        transform: scale(0.965);
+    }
     .btn_orange:hover{
-        opacity: 0.75;
+        background: #ffffff;
+        color: #F53C04 !important;
+        -webkit-transition: 0.25s ease;
+        -o-transition: 0.25s ease;
+        transition: 0.25s ease;
+        -webkit-transform: scale(0.965);
+        -ms-transform: scale(0.965);
+        transform: scale(0.965);
     }
     .slider-big-pagination .swiper-pagination-bullet:hover,
     .masters-slider-min-pagination .swiper-pagination-bullet,

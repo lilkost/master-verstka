@@ -10,11 +10,11 @@ const slidersCreate = () => {
                 el: '.slider-big-pagination',
                 clickable: true
             },
-            effect: 'fade',
-            fadeEffect: {
-                crossFade: true
-            },
-            speed: 1000, 
+            // effect: 'fade',
+            // fadeEffect: {
+            //     crossFade: true
+            // },
+            // speed: 1000, 
         });
     }
 
@@ -48,11 +48,11 @@ const slidersCreate = () => {
                     el: slider.querySelector('.masters-slider-min-pagination'),
                     clickable: true,
                 },
-                effect: 'fade',
-                fadeEffect: {
-                    crossFade: true
-                },
-                speed: 800, 
+                // effect: 'fade',
+                // fadeEffect: {
+                //     crossFade: true
+                // },
+                // speed: 800, 
             });
         })
     }
@@ -65,16 +65,28 @@ const slidersCreate = () => {
                 // Optional parameters
                 direction: 'horizontal',
                 slidesPerView: 1,
+                spaceBetween: 10,
+                loop: true,
+                speed: 600,
+                // loop: true,
                 // If we need pagination
                 pagination: {
                     el: slider.querySelector('.works-slider-min-pagination'),
                     clickable: true
                 },
-                effect: 'fade',
-                fadeEffect: {
-                    crossFade: true
-                },
-                speed: 800, 
+                // on: {
+                //     reachEnd: function () {
+                //       console.log('Достигнут последний слайд');
+                //     },
+                //     touchEnd: function () {
+                //       // Проверяем, что пользователь дошел до конца и тянет дальше
+                //       if (this.isEnd && this.translate < this.maxTranslate()) {
+                //         console.log('Пользователь пытается скроллить дальше последнего слайда');
+                //         // Используем метод slideTo с указанием времени для корректного перехода
+                //         this.slideTo(0, 500);
+                //       }
+                //     }
+                //   }
             });
         })
     }
