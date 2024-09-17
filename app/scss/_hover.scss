@@ -1,0 +1,23 @@
+@media (hover:hover) {
+    .header__register:hover {
+        color: var(--color-orange);
+
+        svg path {
+            fill: var(--color-orange);
+        }
+    }
+
+    .footer__link:hover {
+        color: var(--color-orange);
+    }
+
+    .btn:hover,
+    .btn_orange:hover{
+        opacity: 0.75;
+    }
+    .slider-big-pagination .swiper-pagination-bullet:hover,
+    .masters-slider-min-pagination .swiper-pagination-bullet,
+    .works-slider-min .works-slider-min-pagination .swiper-pagination-bullet:hover {
+        background: var(--color-orange);
+    }
+}
