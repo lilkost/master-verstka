@@ -31,6 +31,17 @@ const slidersCreate = () => {
                 draggable: true, 
             },
             // mousewheel: true,
+
+            breakpoints: {
+                1201: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 38,
+                }
+            }
         });
     }
 

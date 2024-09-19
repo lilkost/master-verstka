@@ -2,7 +2,9 @@ html,
 body {
 	height: 100%;
 }
-
+*,body,html {
+    box-sizing: border-box;
+}
 body {
     font-size: 16px;
     line-height: 19.5px;
@@ -23,8 +25,9 @@ body {
 }
 
 .container {
-	max-width: var(--container-width);
+	max-width: calc(var(--container-width) + 40px);
     width: 100%;
+    padding-inline: 20px;
 	margin: 0 auto;
 }
 

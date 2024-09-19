@@ -126,7 +126,7 @@
         width: max-content;
         z-index: 21;
         position: absolute;
-        right: 16px !important;
+        right: 36px !important;
         .swiper-pagination-bullet{
             width: 12px;
             height: 12px;
@@ -325,7 +325,7 @@
 
     &__list {
         display: grid;
-        grid-template-columns: repeat(6, 252px);
+        grid-template-columns: repeat(6, minmax(200px, 252px));
         grid-column-gap: 40px;
         grid-row-gap: 40px;
     }
@@ -532,3 +532,9 @@ body::-webkit-scrollbar-thumb:active{
 	background:-webkit-gradient(linear, left top, left bottom, from(rgba(212, 131, 2, 1)), to(rgba(191, 33, 2, 1)));
 	background:linear-gradient(180deg, rgba(212, 131, 2, 1) 0%, rgba(191, 33, 2, 1) 100%);
 }
+
+
+// 
+// .footer {
+//     display: none;
+// }
