@@ -5,6 +5,7 @@ const slidersCreate = () => {
             direction: 'vertical',
             slidesPerView: 1,
             spaceBetween: 10,
+            autoHeight: true,
             // If we need pagination
             pagination: {
                 el: '.slider-big-pagination',
@@ -39,6 +40,10 @@ const slidersCreate = () => {
                 },
                 992: {
                     slidesPerView: 3,
+                    spaceBetween: 38,
+                },
+                720:{
+                    slidesPerView: 2,
                     spaceBetween: 38,
                 }
             }
