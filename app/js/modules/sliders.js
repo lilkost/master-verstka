@@ -58,12 +58,13 @@ const slidersCreate = () => {
         const sliderMin = document.querySelectorAll('.masters-slider-min');
         
         sliderMin.forEach((slider, key)=> {
+            const pag = `.masters-slider-min-pagination-${key + 1}`;
             new Swiper(slider, {
                 direction: 'horizontal',
                 slidesPerView: 1,
                 spaceBetween: 10,
                 pagination: {
-                    el: slider.querySelector('.masters-slider-min-pagination'),
+                    el: document.querySelector(pag),
                     clickable: true,
                 },
             });
