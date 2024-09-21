@@ -71,54 +71,54 @@ const slidersCreate = () => {
 
 
 
-        masterBigSlider.on('slideChange', function () {
-            if(window.innerWidth <= 960) {
-                const activeIndex = masterBigSlider.activeIndex;
-            const slides = masterBigSlider.slides;
-            // Получаем индекс следующего и предыдущего слайда
-            const prevIndex = activeIndex - 1;
-            const nextIndex = activeIndex + 1;
+        // masterBigSlider.on('slideChange', function () {
+        //     if(window.innerWidth <= 960) {
+        //         const activeIndex = masterBigSlider.activeIndex;
+        //     const slides = masterBigSlider.slides;
+        //     // Получаем индекс следующего и предыдущего слайда
+        //     const prevIndex = activeIndex - 1;
+        //     const nextIndex = activeIndex + 1;
 
-            // Проверяем наличие предыдущего слайда
-            if (prevIndex >= 0) {
-                const prevSlide = slides[prevIndex];
-                console.log('Предыдущий слайд:', prevSlide);
-                console.log(prevSlide.querySelector('.masters-slider-min'))
-                const sl = prevSlide.querySelector('.masters-slider-min');
-                sl.swiper.destroy(true, true);
-                new Swiper(sl, {
-                    direction: 'horizontal',
-                    slidesPerView: 1,
-                    spaceBetween: 10,
-                    pagination: {
-                        el: prevSlide.querySelector('.masters-slider-min-pagination'),
-                        clickable: true,
-                    },
-                });
-            } else {
-                console.log('Предыдущего слайда нет.');
-            }
+        //     // Проверяем наличие предыдущего слайда
+        //     if (prevIndex >= 0) {
+        //         const prevSlide = slides[prevIndex];
+        //         console.log('Предыдущий слайд:', prevSlide);
+        //         console.log(prevSlide.querySelector('.masters-slider-min'))
+        //         const sl = prevSlide.querySelector('.masters-slider-min');
+        //         sl.swiper.destroy(true, true);
+        //         new Swiper(sl, {
+        //             direction: 'horizontal',
+        //             slidesPerView: 1,
+        //             spaceBetween: 10,
+        //             pagination: {
+        //                 el: prevSlide.querySelector('.masters-slider-min-pagination'),
+        //                 clickable: true,
+        //             },
+        //         });
+        //     } else {
+        //         console.log('Предыдущего слайда нет.');
+        //     }
 
-            // Проверяем наличие следующего слайда
-            if (nextIndex < slides.length) {
-                const nextSlide = slides[nextIndex];
-                console.log('Следующий слайд:', nextSlide);
-                const sl = nextSlide.querySelector('.masters-slider-min');
-                sl.swiper.destroy(true, true);
-                new Swiper(sl, {
-                    direction: 'horizontal',
-                    slidesPerView: 1,
-                    spaceBetween: 10,
-                    pagination: {
-                        el: nextSlide.querySelector('.masters-slider-min-pagination'),
-                        clickable: true,
-                    },
-                });
-            } else {
-                console.log('Следующего слайда нет.');
-            }
-            }
-        });
+        //     // Проверяем наличие следующего слайда
+        //     if (nextIndex < slides.length) {
+        //         const nextSlide = slides[nextIndex];
+        //         console.log('Следующий слайд:', nextSlide);
+        //         const sl = nextSlide.querySelector('.masters-slider-min');
+        //         sl.swiper.destroy(true, true);
+        //         new Swiper(sl, {
+        //             direction: 'horizontal',
+        //             slidesPerView: 1,
+        //             spaceBetween: 10,
+        //             pagination: {
+        //                 el: nextSlide.querySelector('.masters-slider-min-pagination'),
+        //                 clickable: true,
+        //             },
+        //         });
+        //     } else {
+        //         console.log('Следующего слайда нет.');
+        //     }
+        //     }
+        // });
     }
 
 
