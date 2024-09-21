@@ -56,14 +56,16 @@ const slidersCreate = () => {
                     slidesPerView: 2,
                     spaceBetween: 20,
                     autoplay: {
-                        delay: 3500, // Оставляем autoplay на малых экранах
+                        delay: 3500,
+                        disableOnInteraction: true  // Оставляем autoplay на малых экранах
                     },
                 },
                 280:{
                     slidesPerView: 2,
                     spaceBetween: 20,
                     autoplay: {
-                        delay: 3500, // Оставляем autoplay на малых экранах
+                        delay: 3500,
+                        disableOnInteraction: true  // Оставляем autoplay на малых экранах
                     },
                 }
             }
