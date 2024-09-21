@@ -72,15 +72,35 @@ const slidersCreate = () => {
 
 
         masterBigSlider.on('slideChange', function () {
-            const activeSlide = masterBigSlider.slides[masterBigSlider.activeIndex];
-            const innerSwiper = activeSlide.querySelector('.masters-slider-min');
-          
-            if (innerSwiper) {
-              // Обновляем внутренний слайдер
-              innerSwiper.swiper.update();
-              console.log("update")
+            if(window.innerWidth <= 960) {
+                const activeIndex = masterBigSlider.activeIndex;
+            const slides = masterBigSlider.slides;
+            // Получаем индекс следующего и предыдущего слайда
+            const prevIndex = activeIndex - 1;
+            const nextIndex = activeIndex + 1;
+
+            // Проверяем наличие предыдущего слайда
+            if (prevIndex >= 0) {
+                const prevSlide = slides[prevIndex];
+                console.log('Предыдущий слайд:', prevSlide);
+                console.log(prevSlide.querySelector('.masters-slider-min'))
+                const sl = prevSlide.querySelector('.masters-slider-min');
+                sl.swiper.update();
+            } else {
+                console.log('Предыдущего слайда нет.');
             }
-          });
+
+            // Проверяем наличие следующего слайда
+            if (nextIndex < slides.length) {
+                const nextSlide = slides[nextIndex];
+                console.log('Следующий слайд:', nextSlide);
+                const sl = nextSlide.querySelector('.masters-slider-min');
+                sl.swiper.update();
+            } else {
+                console.log('Следующего слайда нет.');
+            }
+            }
+        });
     }
 
 
