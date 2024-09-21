@@ -85,7 +85,16 @@ const slidersCreate = () => {
                 console.log('Предыдущий слайд:', prevSlide);
                 console.log(prevSlide.querySelector('.masters-slider-min'))
                 const sl = prevSlide.querySelector('.masters-slider-min');
-                sl.swiper.update();
+                sl.swiper.destroy(true, true);
+                new Swiper(sl, {
+                    direction: 'horizontal',
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                    pagination: {
+                        el: prevSlide.querySelector('.masters-slider-min-pagination'),
+                        clickable: true,
+                    },
+                });
             } else {
                 console.log('Предыдущего слайда нет.');
             }
@@ -95,7 +104,16 @@ const slidersCreate = () => {
                 const nextSlide = slides[nextIndex];
                 console.log('Следующий слайд:', nextSlide);
                 const sl = nextSlide.querySelector('.masters-slider-min');
-                sl.swiper.update();
+                sl.swiper.destroy(true, true);
+                new Swiper(sl, {
+                    direction: 'horizontal',
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                    pagination: {
+                        el: nextSlide.querySelector('.masters-slider-min-pagination'),
+                        clickable: true,
+                    },
+                });
             } else {
                 console.log('Следующего слайда нет.');
             }
