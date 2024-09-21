@@ -21,24 +21,28 @@ const slidersCreate = () => {
         });
     }
 
-    if(document.querySelector('.masters-slider-min')) {
-        const sliderMin = document.querySelectorAll('.masters-slider-min');
-
-        sliderMin.forEach((slider, key)=> {
-            const swiper = new Swiper(slider, {
-                direction: 'horizontal',
-                slidesPerView: 1,
-                spaceBetween: 10,
-                pagination: {
-                    el: slider.querySelector('.masters-slider-min-pagination'),
-                    clickable: true,
-                },
-            });
-        })
+    const createMinSliderFn = () => {
+        if(document.querySelector('.masters-slider-min')) {
+            const sliderMin = document.querySelectorAll('.masters-slider-min');
+    
+            sliderMin.forEach((slider, key)=> {
+                const swiper = new Swiper(slider, {
+                    direction: 'horizontal',
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                    pagination: {
+                        el: slider.querySelector('.masters-slider-min-pagination'),
+                        clickable: true,
+                    },
+                });
+            })
+        }
     }
 
+    createMinSliderFn();
+
     if(document.querySelector('.masters-slider')) {
-        const swiper = new Swiper('.masters-slider', {
+        const masterBigSlider = new Swiper('.masters-slider', {
             direction: 'horizontal',
             slidesPerView: 4,
             spaceBetween: 40,
@@ -65,6 +69,13 @@ const slidersCreate = () => {
                     slidesPerView: 1,
                     spaceBetween: 38,
                 }
+            }
+        });
+        
+        masterBigSlider.on('slideChangeTransitionEnd', function () {
+            if(window.innerWidth <= 480) {
+                console.log('Переход на новый слайд завершен');
+                createMinSliderFn();
             }
         });
     }
