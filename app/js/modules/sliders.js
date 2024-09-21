@@ -21,6 +21,22 @@ const slidersCreate = () => {
         });
     }
 
+    if(document.querySelector('.masters-slider-min')) {
+        const sliderMin = document.querySelectorAll('.masters-slider-min');
+
+        sliderMin.forEach((slider, key)=> {
+            const swiper = new Swiper(slider, {
+                direction: 'horizontal',
+                slidesPerView: 1,
+                spaceBetween: 10,
+                pagination: {
+                    el: slider.querySelector('.masters-slider-min-pagination'),
+                    clickable: true,
+                },
+            });
+        })
+    }
+
     if(document.querySelector('.masters-slider')) {
         const swiper = new Swiper('.masters-slider', {
             direction: 'horizontal',
@@ -53,21 +69,7 @@ const slidersCreate = () => {
         });
     }
 
-    if(document.querySelector('.masters-slider-min')) {
-        const sliderMin = document.querySelectorAll('.masters-slider-min');
 
-        sliderMin.forEach((slider, key)=> {
-            const swiper = new Swiper(slider, {
-                direction: 'horizontal',
-                slidesPerView: 1,
-                spaceBetween: 10,
-                pagination: {
-                    el: slider.querySelector('.masters-slider-min-pagination'),
-                    clickable: true,
-                },
-            });
-        })
-    }
 
     if(document.querySelector('.works-slider-min')) {
         const sliderMin = document.querySelectorAll('.works-slider-min');
