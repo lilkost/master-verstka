@@ -22,14 +22,13 @@ const slidersCreate = () => {
     }
 
 
-
-
     if(document.querySelector('.masters-slider')) {
         const masterBigSlider = new Swiper('.masters-slider', {
             direction: 'horizontal',
             slidesPerView: 4,
             spaceBetween: 40,
             allowTouchMove: false,
+            autoHeight: true,
             scrollbar: {
                 el: '.masters-slider-scrollbar',
                 clickable: true,
@@ -43,14 +42,19 @@ const slidersCreate = () => {
                 1201: {
                     slidesPerView: 4,
                     spaceBetween: 40,
+                    autoplay:false,
                 },
                 960: {
                     slidesPerView: 3,
                     spaceBetween: 38,
+                    autoplay:false,
                 },
                 280:{
-                    slidesPerView: 1,
-                    spaceBetween: 38,
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                    autoplay: {
+                        delay: 3500,
+                    },
                 }
             }
         });

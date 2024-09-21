@@ -84,7 +84,7 @@
         justify-content: center;
         width: 100%;
         max-width: 100%;
-        height: calc(100svh - 80px);
+        height: calc(105svh - 80px);
         background-color:var(--fill);
     }
 }
@@ -167,7 +167,7 @@
         flex-direction: column;
 
         width: max-content;
-        z-index: 21;
+        z-index: 50 !important;
         position: absolute;
         right: 36px !important;
         .swiper-pagination-bullet{
@@ -243,7 +243,7 @@
         position: absolute;
         right: 11px;
         top: 11px;
-        z-index: 22;
+        z-index: 50 ;
         font-family: var(--font-family-mont);
         
         font-size: 14px;
@@ -324,10 +324,13 @@
     overflow: hidden;
     // .masters-slider-min__slide
     position: relative;
-    
-
+    z-index: 0 !important;
+    .swiper-wrapper{
+        z-index: 0 !important;
+    }
     &__slide {
         border-radius: var(--radius);
+        z-index: 1;
         img {
             max-width: 100%;
             width: 100%;
@@ -337,18 +340,19 @@
             aspect-ratio: 1 / 1;
             border-radius: var(--radius);
             margin-bottom: 20px;
-            
+            z-index: 1;
         }
     }
     &-pagination {
         position: absolute;
-        z-index: 22;
+        z-index: 50 !important;
         max-width: max-content;
         left: 50% !important;
         transform: translateX(-50%) !important;
         gap: 14px;
-        display: flex;
+        display: flex !important;
         bottom: unset !important;
+        opacity: 1 !important;
         top: 368px !important;
         .swiper-pagination-bullet {
             width: 12px;
@@ -357,6 +361,7 @@
             background-color: #D9D9D9;
             opacity: 1;
             transition: var(--transition-bg);
+
             &.swiper-pagination-bullet-active{
                 background: linear-gradient(90deg, #FDA109 0%, #F42C03 100%);
             }
@@ -423,7 +428,8 @@
         // .works__item-advantages-item_price
 
         &_price {
-            background-color: var(--color-blue);
+            // background-color: var(--color-blue);
+            background-color: var(--color-green);
         }
 
         // .works__item-advantages-item_popular
@@ -523,7 +529,7 @@
 
     .works-slider-min-pagination{
         position: absolute;
-        z-index: 22;
+        z-index: 50 !important;
         display: flex;
         align-items: center;
         max-width: max-content;
