@@ -9,6 +9,15 @@ const slidersCreate = () => {
                 el: '.slider-big-pagination',
                 clickable: true
             },
+
+            breakpoints: {
+                481: {
+                    direction: 'vertical',
+                },
+                280:{
+                    direction: 'horizontal',
+                }
+            }
         });
     }
 
