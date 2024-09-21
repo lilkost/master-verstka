@@ -24,23 +24,31 @@
 
   <!-- wrapper -->
   <div class="wrapper">
-    <header class="header header__mb container">
-        <a class="header__logo" href="#" target="_blank">
-            <img src="images/logo.svg" alt="logo">
-        </a>
-        <a class="header__register" href="#!">
-            <span>ЗАРЕГИСТРИРОВАТЬСЯ</span>
-            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_294_2946)">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 1.36346C4.11083 1.36346 1.36346 4.11083 1.36346 7.5C1.36346 10.8892 4.11083 13.6365 7.5 13.6365C10.8892 13.6365 13.6365 10.8892 13.6365 7.5C13.6365 4.11083 10.8892 1.36346 7.5 1.36346ZM0 7.5C0 3.35792 3.35792 0 7.5 0C11.6421 0 15 3.35792 15 7.5C15 11.6421 11.6421 15 7.5 15C3.35792 15 0 11.6421 0 7.5Z" fill="white"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.49983 3.79888C6.80053 3.79888 6.23353 4.36586 6.23353 5.06518C6.23353 5.76449 6.80051 6.33149 7.49983 6.33149C8.19915 6.33149 8.76613 5.7645 8.76613 5.06518C8.76613 4.36588 8.19915 3.79888 7.49983 3.79888ZM4.87012 5.06518C4.87012 3.61223 6.04756 2.43481 7.49983 2.43481C8.95278 2.43481 10.1302 3.61226 10.1302 5.06518C10.1302 6.5175 8.95275 7.69489 7.49983 7.69489C6.04752 7.69489 4.87012 6.51745 4.87012 5.06518Z" fill="white"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 9.54541C5.60798 9.54541 4.01428 10.8303 3.54774 12.5765C3.45058 12.9403 3.07663 13.1563 2.71291 13.0591C2.34918 12.962 2.13313 12.588 2.2303 12.2243C2.85227 9.89684 4.97505 8.18188 7.50003 8.18188C10.025 8.18188 12.1478 9.89684 12.7704 12.2243C12.8676 12.588 12.6515 12.962 12.2878 13.0591C11.9235 13.1563 11.5502 12.9403 11.453 12.5765C10.9857 10.8302 9.39202 9.54541 7.5 9.54541Z" fill="white"/>
-                </g>
-            </svg>
-        </a>
+    <header class="header">
+        <div class="header__inner container">
+            <a class="header__logo" href="#" target="_blank">
+                <img src="images/logo.svg" alt="logo">
+            </a>
+            <a class="header__register" href="#!" data-da=".header__menu, 980, first">
+                <span>ЗАРЕГИСТРИРОВАТЬСЯ</span>
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_294_2946)">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 1.36346C4.11083 1.36346 1.36346 4.11083 1.36346 7.5C1.36346 10.8892 4.11083 13.6365 7.5 13.6365C10.8892 13.6365 13.6365 10.8892 13.6365 7.5C13.6365 4.11083 10.8892 1.36346 7.5 1.36346ZM0 7.5C0 3.35792 3.35792 0 7.5 0C11.6421 0 15 3.35792 15 7.5C15 11.6421 11.6421 15 7.5 15C3.35792 15 0 11.6421 0 7.5Z" fill="white"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.49983 3.79888C6.80053 3.79888 6.23353 4.36586 6.23353 5.06518C6.23353 5.76449 6.80051 6.33149 7.49983 6.33149C8.19915 6.33149 8.76613 5.7645 8.76613 5.06518C8.76613 4.36588 8.19915 3.79888 7.49983 3.79888ZM4.87012 5.06518C4.87012 3.61223 6.04756 2.43481 7.49983 2.43481C8.95278 2.43481 10.1302 3.61226 10.1302 5.06518C10.1302 6.5175 8.95275 7.69489 7.49983 7.69489C6.04752 7.69489 4.87012 6.51745 4.87012 5.06518Z" fill="white"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 9.54541C5.60798 9.54541 4.01428 10.8303 3.54774 12.5765C3.45058 12.9403 3.07663 13.1563 2.71291 13.0591C2.34918 12.962 2.13313 12.588 2.2303 12.2243C2.85227 9.89684 4.97505 8.18188 7.50003 8.18188C10.025 8.18188 12.1478 9.89684 12.7704 12.2243C12.8676 12.588 12.6515 12.962 12.2878 13.0591C11.9235 13.1563 11.5502 12.9403 11.453 12.5765C10.9857 10.8302 9.39202 9.54541 7.5 9.54541Z" fill="white"/>
+                    </g>
+                </svg>
+            </a>
+            <button class="header__burger" id="headerBurger" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="header__menu"></div>
     </header>
       <main class="main">
-        <div class="top top_mb">
+        <div class="top top_pt top_mb">
             <div class="top__slider-parent container">
                 <div class="slider-big">
                     <div class="swiper-wrapper">
@@ -399,6 +407,10 @@
                             <a href="#!" class="masters-slider__slide-link btn">Заглянуть к мастеру</a>
                         </div>
                     </div>
+                </div>
+                <div class="masters-slider__controlls">
+                    <div class="masters-slider-button-prev">←</div>
+                    <div class="masters-slider-button-next">→</div>
                 </div>
             </div>
         </section>
@@ -1833,7 +1845,9 @@
         <a class="footer__logo" href="#" target="_blank">
             <img src="images/logo_big.svg" alt="">
         </a>
-        <a href="#!" class="footer__link" target="_blank">Политика конфиденциальности</a>
+        <a href="https://projects.abats.ru/master-fin/v30/privacy" class="footer__link" target="_blank">
+            Политика конфиденциальности
+        </a>
     </footer>
   </div>
 

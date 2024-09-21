@@ -7,17 +7,33 @@
 @import 'hover';
 
 .header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 36px;
+    box-shadow: 0 2px 3px rgba(0,11,48,0.25);
+    background: transparent;
+    // background-color: rgba(0, 0, 0, 0.70);
+    backdrop-filter: blur(8px);
+    transition: box-shadow 300ms ease, backdrop-filter 300ms ease, background 300ms ease;
+    position: fixed;
+    z-index: 60;
+    top: 0;
+    left: 0;
+    right: 0;
+    &__inner{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    // padding-top: 36px;
 
     &.header__mb{
         margin-bottom: 35px;
     }
 	// .header__logo
-
+    &__logo{
+        height: 80px;
+        display: flex;
+        align-items: center;
+    }
 	// .header__register
 
 	&__register {
@@ -46,6 +62,31 @@
             top: 1px;
         }
 	}
+    &__burger{
+        display: none;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        outline: none;
+        background: none;
+        span{
+            width: 28px;
+            height: 3px;
+            background-color: rgb(255, 255, 255);
+
+            transition: transform 300ms ease, opacity 300ms ease;
+        }
+    }
+    &__menu{
+        display: none;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        width: 100%;
+        max-width: 100%;
+        height: calc(100svh - 80px);
+        background-color:var(--fill);
+    }
 }
 
 .top {
@@ -58,6 +99,9 @@
 
     &.top_mb{
         margin-bottom: 61px;
+    }
+    &.top_pt{
+        padding-top: 115px;
     }
 }
 
@@ -262,6 +306,17 @@
 
         margin-top: auto;
         margin-bottom: 0;
+    }
+
+    &__controlls{
+        display: none;
+    }
+
+    .swiper-wrapper{
+        align-items: stretch;
+    }
+    .swiper-slide {
+        height: auto;
     }
 }
 
@@ -531,10 +586,3 @@ body::-webkit-scrollbar-thumb:active{
 	background:-webkit-gradient(linear, left top, left bottom, from(rgba(212, 131, 2, 1)), to(rgba(191, 33, 2, 1)));
 	background:linear-gradient(180deg, rgba(212, 131, 2, 1) 0%, rgba(191, 33, 2, 1) 100%);
 }
-
-
-// .masters,
-// .works,
-// .footer {
-//     display: none;
-// }
