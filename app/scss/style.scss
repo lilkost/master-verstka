@@ -74,7 +74,7 @@
             height: 3px;
             background-color: rgb(255, 255, 255);
 
-            transition: transform 300ms ease, opacity 300ms ease;
+            transition: transform 300ms ease, opacity 300ms ease, top 300ms ease;
         }
     }
     &__menu{
@@ -324,7 +324,7 @@
     overflow: hidden;
     // .masters-slider-min__slide
     position: relative;
-    margin-bottom: 20px;
+    
 
     &__slide {
         border-radius: var(--radius);
@@ -334,7 +334,10 @@
             height: 400px;
             object-fit: cover;
             object-position: center;
+            aspect-ratio: 1 / 1;
             border-radius: var(--radius);
+            margin-bottom: 20px;
+            
         }
     }
     &-pagination {
@@ -345,8 +348,8 @@
         transform: translateX(-50%) !important;
         gap: 14px;
         display: flex;
-        bottom: 21px !important;
-
+        bottom: unset !important;
+        top: 368px !important;
         .swiper-pagination-bullet {
             width: 12px;
             height: 12px;
