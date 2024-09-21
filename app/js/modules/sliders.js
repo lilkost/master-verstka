@@ -25,19 +25,6 @@ const slidersCreate = () => {
 
 
     if(document.querySelector('.masters-slider')) {
-        const sliderMin = document.querySelectorAll('.masters-slider-min');
-        sliderMin.forEach((slider, key)=> {
-            new Swiper(slider, {
-                direction: 'horizontal',
-                slidesPerView: 1,
-                spaceBetween: 10,
-                pagination: {
-                    el: slider.querySelector('.masters-slider-min-pagination'),
-                    clickable: true,
-                },
-            });
-        })
-
         const masterBigSlider = new Swiper('.masters-slider', {
             direction: 'horizontal',
             slidesPerView: 4,
@@ -68,11 +55,32 @@ const slidersCreate = () => {
             }
         });
         
-        masterBigSlider.on('slideChangeTransitionEnd', function () {
-            if(window.innerWidth <= 480) {
-                console.log('Переход на новый слайд завершен');
+        const sliderMin = document.querySelectorAll('.masters-slider-min');
+        
+        sliderMin.forEach((slider, key)=> {
+            new Swiper(slider, {
+                direction: 'horizontal',
+                slidesPerView: 1,
+                spaceBetween: 10,
+                pagination: {
+                    el: slider.querySelector('.masters-slider-min-pagination'),
+                    clickable: true,
+                },
+            });
+        })
+
+
+
+        masterBigSlider.on('slideChange', function () {
+            const activeSlide = masterBigSlider.slides[masterBigSlider.activeIndex];
+            const innerSwiper = activeSlide.querySelector('.masters-slider-min');
+          
+            if (innerSwiper) {
+              // Обновляем внутренний слайдер
+              innerSwiper.swiper.update();
+              console.log("update")
             }
-        });
+          });
     }
 
 
