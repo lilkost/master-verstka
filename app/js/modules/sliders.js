@@ -38,22 +38,32 @@ const slidersCreate = () => {
                 nextEl: '.masters-slider-button-next',
                 prevEl: '.masters-slider-button-prev',
             },
+            autoplay: {
+                delay: 3500, // Устанавливаем autoplay по умолчанию
+            },
             breakpoints: {
                 1201: {
                     slidesPerView: 4,
                     spaceBetween: 40,
-                    autoplay:false,
+                    autoplay: false, // Отключаем autoplay на больших экранах
                 },
                 960: {
                     slidesPerView: 3,
                     spaceBetween: 38,
-                    autoplay:false,
+                    autoplay: false, // Отключаем autoplay на планшетах
+                },
+                480:{
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                    autoplay: {
+                        delay: 3500, // Оставляем autoplay на малых экранах
+                    },
                 },
                 280:{
                     slidesPerView: 2,
                     spaceBetween: 20,
                     autoplay: {
-                        delay: 3500,
+                        delay: 3500, // Оставляем autoplay на малых экранах
                     },
                 }
             }
