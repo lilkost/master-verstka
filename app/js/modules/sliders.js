@@ -56,7 +56,7 @@ const slidersCreate = () => {
                     slidesPerView: 2,
                     spaceBetween: 20,
                     autoplay: {
-                        delay: 3500,
+                        delay: 10000,
                         disableOnInteraction: true  // Оставляем autoplay на малых экранах
                     },
                 },
@@ -64,7 +64,7 @@ const slidersCreate = () => {
                     slidesPerView: 2,
                     spaceBetween: 20,
                     autoplay: {
-                        delay: 3500,
+                        delay: 10000,
                         disableOnInteraction: true  // Оставляем autoplay на малых экранах
                     },
                 }
