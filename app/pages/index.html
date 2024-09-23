@@ -30,7 +30,17 @@
             <div class="top__slider-parent container">
                 <div class="slider-big">
                     <div class="swiper-wrapper">
-                        <div class="slider-big__slide swiper-slide" style="background-image: url(images/slider_big/1.png);">
+                        <a href="#!" class="slider-big__slide swiper-slide" style="--bg: url('../images/slider_big/2.png'); --mob-bg: url('../images/slider_big/mob/1.png');">
+                            <div class="slider-big__slide-box">
+                                <h2 class="slider-big__slide-title slider-big__slide-title-big slider-big__slide-title_mb-17">
+                                    <span class="slider-big__slide-title-num">Первый<br></span>
+                                    маркетплейс отечественных производителей
+                                </h2>
+                                <h3 class="slider-big__slide-description">На сайте представлены только проверенные продавцы. Каждая продажа вносит вклад в развитие внутреннего российского производства, а уточнить все детали можно напрямую у мастеров.</h3>
+                            </div>
+
+                        </a>
+                        <a href="#!" class="slider-big__slide swiper-slide" style="--bg: url('../images/slider_big/1.png'); --mob-bg: url('../images/slider_big/mob/2.png');">
                             <div class="slider-big__slide-box">
                                 <h3 class="slider-big__slide-description">Собирайте свой набор и получайте секретный нож в подарок!</h3>
                                 <h2 class="slider-big__slide-title">Кухонные ножи, как в лучших ресторанах страны</h2>
@@ -38,34 +48,25 @@
                             <a class="slider-big__link btn" href="#">
                                 Заглянуть в мастерскую
                             </a>
-                        </div>
-                        <div class="slider-big__slide swiper-slide" style="background-image: url(images/slider_big/1.png);">
-                            <div class="slider-big__slide-box">
-                                <h3 class="slider-big__slide-description">Собирайте свой набор и получайте секретный нож в подарок!</h3>
-                                <h2 class="slider-big__slide-title">Кухонные ножи, как в лучших ресторанах страны 2</h2>
-                            </div>
-                            <a class="slider-big__link btn" href="#">
-                                Заглянуть в мастерскую
-                            </a>
-                        </div>
-                        <div class="slider-big__slide swiper-slide" style="background-image: url(images/slider_big/1.png);">
-                            <div class="slider-big__slide-box">
+                        </a>
+                        <a href="#!" class="slider-big__slide swiper-slide" style="--bg: url('../images/slider_big/3.png'); --mob-bg: url('../images/slider_big/mob/3.png');">
+                            <!-- <div class="slider-big__slide-box">
                                 <h3 class="slider-big__slide-description">Собирайте свой набор и получайте секретный нож в подарок!</h3>
                                 <h2 class="slider-big__slide-title">Кухонные ножи, как в лучших ресторанах страны 3</h2>
                             </div>
                             <a class="slider-big__link btn" href="#">
                                 Заглянуть в мастерскую
-                            </a>
-                        </div>
-                        <div class="slider-big__slide swiper-slide" style="background-image: url(images/slider_big/1.png);">
-                            <div class="slider-big__slide-box">
+                            </a> -->
+                        </a>
+                        <a href="#!" class="slider-big__slide swiper-slide" style="--bg: url('../images/slider_big/4.png'); --mob-bg: url('../images/slider_big/mob/4.png');">
+                            <!-- <div class="slider-big__slide-box">
                                 <h3 class="slider-big__slide-description">Собирайте свой набор и получайте секретный нож в подарок!</h3>
                                 <h2 class="slider-big__slide-title">Кухонные ножи, как в лучших ресторанах страны 4</h2>
                             </div>
                             <a class="slider-big__link btn" href="#">
                                 Заглянуть в мастерскую
-                            </a>
-                        </div>
+                            </a> -->
+                        </a>
                     </div>
                 </div>
                 <div class="slider-big-pagination"></div>
@@ -74,7 +75,20 @@
         <section class="masters masters_mb container">
             <h2 class="masters__title title_main">Новые мастера на площадке</h2>
             <div class="masters__parent-slider">
-                <div class="masters-slider-scrollbar masters-slider-scrollbar_mb"></div>
+
+                <div class="masters-slider__controlls-sl">
+                    <div class="masters-slider-button-prev">
+                        <svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.84306 11.2894L7.50006 5.63235L8.91406 7.04635L3.96406 11.9964L8.91406 16.9464L7.50006 18.3604L1.84306 12.7034C1.65559 12.5158 1.55028 12.2615 1.55028 11.9964C1.55028 11.7312 1.65559 11.4769 1.84306 11.2894Z" fill="#D9D9D9"/>
+                        </svg>
+                    </div>
+                    <div class="masters-slider-scrollbar masters-slider-scrollbar_mb"></div>
+                    <div class="masters-slider-button-next">
+                        <svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.1569 11.2894L4.49994 5.63235L3.08594 7.04635L8.03594 11.9964L3.08594 16.9464L4.49994 18.3604L10.1569 12.7034C10.3444 12.5158 10.4497 12.2615 10.4497 11.9964C10.4497 11.7312 10.3444 11.4769 10.1569 11.2894Z" fill="#D9D9D9"/>
+                        </svg>
+                    </div>
+                </div>
                 <div class="masters-slider">
                     <div class="swiper-wrapper">
                         <div class="masters-slider__slide swiper-slide">
@@ -459,10 +473,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="masters-slider__controlls">
-                    <div class="masters-slider-button-prev">←</div>
-                    <div class="masters-slider-button-next">→</div>
-                </div>
+
             </div>
         </section>
         <section class="works works_mb container">
@@ -477,7 +488,8 @@
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 7 т.р.</div>
                         <div class="works__item-advantages-item works__item-advantages-item_popular">ХИТ</div>
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-1"></div>
+                    <div class="works-slider-min works-slider-min-1 ">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -496,7 +508,6 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
                     </div>
                     <h3 class="works__item-title">
                         
@@ -510,7 +521,8 @@
                     <div class="works__item-advantages">
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 3 т.р.</div>
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-2"></div>
+                    <div class="works-slider-min works-slider-min-2">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -523,7 +535,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         Итальянские надежные пряжки
@@ -538,7 +550,8 @@
                     <div class="works__item-advantages">
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 7 т.р.</div>
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-3"></div>
+                    <div class="works-slider-min works-slider-min-3">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -551,7 +564,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         Ремень в подарок к любой сумке
@@ -564,7 +577,8 @@
                     <div class="works__item-advantages">
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 11 т.р.</div>
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-4"></div>
+                    <div class="works-slider-min works-slider-min-4">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -577,7 +591,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         
@@ -593,7 +607,8 @@
                     <div class="works__item-advantages">
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 2 т.р.</div>
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-5"></div>
+                    <div class="works-slider-min works-slider-min-5">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -606,7 +621,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         
@@ -620,7 +635,8 @@
                     <div class="works__item-advantages">
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 1 950 р.</div>
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-6"></div>
+                    <div class="works-slider-min works-slider-min-6">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -633,7 +649,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         Обложки на паспорта,
@@ -650,7 +666,8 @@
                     <div class="works__item-advantages">
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 3 т.р.</div>
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-7"></div>
+                    <div class="works-slider-min works-slider-min-7">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -663,7 +680,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         Изделия для ваших вторых половин
@@ -678,7 +695,8 @@
                     <div class="works__item-advantages">
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 9 т.р.</div>
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-8"></div>
+                    <div class="works-slider-min works-slider-min-8">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -691,7 +709,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         Сумки для любой диагонали ноутбука
@@ -706,7 +724,8 @@
                     <div class="works__item-advantages">
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 19 т.р.</div>
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-9"></div>
+                    <div class="works-slider-min works-slider-min-9">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -721,7 +740,7 @@
                         </div>
 
                         
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         Единичные экземпляры изделий под заказ
@@ -741,7 +760,8 @@
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 2 350 р.</div>
                         <div class="works__item-advantages-item works__item-advantages-item_popular">ХИТ</div>
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-10"></div>
+                    <div class="works-slider-min works-slider-min-10">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -754,7 +774,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         Только кованая сталь
@@ -770,7 +790,8 @@
                     <div class="works__item-advantages">
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 2 350 р.</div>
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-11"></div>
+                    <div class="works-slider-min works-slider-min-11">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -783,7 +804,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         Авторская закалка 58+ Роквелл
@@ -800,7 +821,8 @@
                     <div class="works__item-advantages">
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 2 750 р.</div>
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-12"></div>
+                    <div class="works-slider-min works-slider-min-12">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -813,7 +835,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         
@@ -829,7 +851,8 @@
                     <div class="works__item-advantages">
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 4 950 р.</div>
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-13"></div>
+                    <div class="works-slider-min works-slider-min-13">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -842,7 +865,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         Идеальная 
@@ -859,7 +882,8 @@
                     <div class="works__item-advantages">
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 7 т.р.</div>
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-14"></div>
+                    <div class="works-slider-min works-slider-min-14">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -872,7 +896,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                       
                     </div>
                     <h3 class="works__item-title">
                         Индивидуальные изделия
@@ -893,7 +917,8 @@
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 3 т.р.</div>
                         <div class="works__item-advantages-item works__item-advantages-item_popular">АКЦИЯ</div>
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-15"></div>
+                    <div class="works-slider-min works-slider-min-15">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -906,7 +931,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         
@@ -925,7 +950,8 @@
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 3 т.р.</div>
                         <div class="works__item-advantages-item works__item-advantages-item_popular">ХИТ</div>
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-16"></div>
+                    <div class="works-slider-min works-slider-min-16">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -938,7 +964,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         Стальные щипцы для<br> стейков в подарок!
@@ -955,7 +981,8 @@
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 2 510 р.</div>
                         <!-- <div class="works__item-advantages-item works__item-advantages-item_popular">ХИТ</div> -->
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-17"></div>
+                    <div class="works-slider-min works-slider-min-17">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -968,7 +995,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         
@@ -986,7 +1013,8 @@
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 1 123 р.</div>
                         <!-- <div class="works__item-advantages-item works__item-advantages-item_popular">ХИТ</div> -->
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-18"></div>
+                    <div class="works-slider-min works-slider-min-18">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -999,7 +1027,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         
@@ -1017,7 +1045,8 @@
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 4 т.р.</div>
                         <!-- <div class="works__item-advantages-item works__item-advantages-item_popular">ХИТ</div> -->
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-19"></div>
+                    <div class="works-slider-min works-slider-min-19">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -1035,7 +1064,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         
@@ -1053,7 +1082,8 @@
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 4 т.р.</div>
                         <!-- <div class="works__item-advantages-item works__item-advantages-item_popular">ХИТ</div> -->
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-20"></div>
+                    <div class="works-slider-min works-slider-min-20">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -1066,7 +1096,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         
@@ -1084,7 +1114,8 @@
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 3 750 р.</div>
                         <!-- <div class="works__item-advantages-item works__item-advantages-item_popular">ХИТ</div> -->
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-21"></div>
+                    <div class="works-slider-min works-slider-min-21">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -1097,7 +1128,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         
@@ -1119,7 +1150,8 @@
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 11 т.р.</div>
                         <!-- <div class="works__item-advantages-item works__item-advantages-item_popular">ХИТ</div> -->
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-22"></div>
+                    <div class="works-slider-min works-slider-min-22">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -1132,7 +1164,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         Единичные экземпляры
@@ -1148,7 +1180,8 @@
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 5 т.р.</div>
                         <div class="works__item-advantages-item works__item-advantages-item_popular">ХИТ</div>
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-23"></div>
+                    <div class="works-slider-min works-slider-min-23">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -1161,7 +1194,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         Ножны с подвесом в подарок!
@@ -1177,7 +1210,8 @@
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 5 т.р.</div>
                         <div class="works__item-advantages-item works__item-advantages-item_popular">ХИТ</div>
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-24"></div>
+                    <div class="works-slider-min works-slider-min-24">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -1190,7 +1224,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         Кованая рессорно-пружинная сталь высокой упругости
@@ -1206,7 +1240,8 @@
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 5 950 р.</div>
                         <!-- <div class="works__item-advantages-item works__item-advantages-item_popular">ХИТ</div> -->
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-25"></div>
+                    <div class="works-slider-min works-slider-min-25">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -1219,7 +1254,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         Можно нанести любую<br> гравировку
@@ -1235,7 +1270,8 @@
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 3 т.р.</div>
                         <!-- <div class="works__item-advantages-item works__item-advantages-item_popular">ХИТ</div> -->
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-26"></div>
+                    <div class="works-slider-min works-slider-min-26">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -1248,7 +1284,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         Неубиваемая конструкция — фултанг
@@ -1264,7 +1300,8 @@
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 3 т.р.</div>
                         <!-- <div class="works__item-advantages-item works__item-advantages-item_popular">ХИТ</div> -->
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-27"></div>
+                    <div class="works-slider-min works-slider-min-27">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -1277,7 +1314,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         Обкладки из натурального дерева обработаны в 7 этапов
@@ -1297,7 +1334,8 @@
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 2 т.р.</div>
                         <!-- <div class="works__item-advantages-item works__item-advantages-item_popular">ХИТ</div> -->
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-28"></div>
+                    <div class="works-slider-min works-slider-min-28">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -1310,7 +1348,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         Выполнен из отборной плотной части кожи
@@ -1326,7 +1364,8 @@
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 2 350 за шт.</div>
                         <!-- <div class="works__item-advantages-item works__item-advantages-item_popular">ХИТ</div> -->
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-29"></div>
+                    <div class="works-slider-min works-slider-min-29">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -1339,7 +1378,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         Выполнен из отборной плотной части кожи
@@ -1355,7 +1394,8 @@
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 1 950 за шт.</div>
                         <!-- <div class="works__item-advantages-item works__item-advantages-item_popular">ХИТ</div> -->
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-30"></div>
+                    <div class="works-slider-min works-slider-min-30">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -1368,7 +1408,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         Выполнен из отборной плотной части кожи
@@ -1384,7 +1424,8 @@
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 2 750 р.</div>
                         <!-- <div class="works__item-advantages-item works__item-advantages-item_popular">ХИТ</div> -->
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-31"></div>
+                    <div class="works-slider-min works-slider-min-31">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -1397,7 +1438,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         Более 7 видов цветов
@@ -1413,7 +1454,8 @@
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 2 т.р.</div>
                         <!-- <div class="works__item-advantages-item works__item-advantages-item_popular">ХИТ</div> -->
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-32"></div>
+                    <div class="works-slider-min works-slider-min-32">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -1426,7 +1468,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         Разная ширина и размеры
@@ -1446,7 +1488,8 @@
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 3 т.р.</div>
                         <div class="works__item-advantages-item works__item-advantages-item_popular">ХИТ</div>
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-33"></div>
+                    <div class="works-slider-min works-slider-min-33">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -1459,7 +1502,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         Легендарные лампы EDISON
@@ -1475,7 +1518,8 @@
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 5 350 р.</div>
                         <!-- <div class="works__item-advantages-item works__item-advantages-item_popular">ХИТ</div> -->
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-34"></div>
+                    <div class="works-slider-min works-slider-min-34">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -1488,7 +1532,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         Металлический шильдик с именной гравировкой в подарок!
@@ -1504,7 +1548,8 @@
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 7 т.р.</div>
                         <!-- <div class="works__item-advantages-item works__item-advantages-item_popular">ХИТ</div> -->
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-35"></div>
+                    <div class="works-slider-min works-slider-min-35">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -1517,7 +1562,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         Отборные дорогие породы дерева
@@ -1533,7 +1578,8 @@
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 3 т.р.</div>
                         <div class="works__item-advantages-item works__item-advantages-item_popular">ХИТ</div>
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-36"></div>
+                    <div class="works-slider-min works-slider-min-36">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -1546,7 +1592,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         Отличный необычныйподарок близким — вы дарите тепло и свет в дом
@@ -1562,7 +1608,8 @@
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 11 т.р.</div>
                         <!-- <div class="works__item-advantages-item works__item-advantages-item_popular">ХИТ</div> -->
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-37"></div>
+                    <div class="works-slider-min works-slider-min-37">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -1575,7 +1622,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         Качество и стиль в каждой детали — полностью ручная работа
@@ -1591,7 +1638,8 @@
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 9 т.р.</div>
                         <div class="works__item-advantages-item works__item-advantages-item_popular">АКЦИЯ</div>
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-38"></div>
+                    <div class="works-slider-min works-slider-min-38">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -1604,7 +1652,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         Плетение лозой вручную в множество слоев
@@ -1622,7 +1670,8 @@
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 4 730 р.</div>
                         <!-- <div class="works__item-advantages-item works__item-advantages-item_popular">АКЦИЯ</div> -->
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-39"></div>
+                    <div class="works-slider-min works-slider-min-39">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -1637,7 +1686,7 @@
                                 
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         Каркас из натурального дерева
@@ -1653,7 +1702,8 @@
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 4 730 р.</div>
                         <div class="works__item-advantages-item works__item-advantages-item_popular">ХИТ</div>
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-40"></div>
+                    <div class="works-slider-min works-slider-min-40">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -1668,7 +1718,7 @@
                                 
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         Ткань премиум класса
@@ -1684,7 +1734,8 @@
                         <div class="works__item-advantages-item works__item-advantages-item_price">от 11 т.р.</div>
                         <!-- <div class="works__item-advantages-item works__item-advantages-item_popular">ХИТ</div> -->
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-41"></div>
+                    <div class="works-slider-min works-slider-min-41">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -1692,7 +1743,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         Обтянуто натуральной кожей
@@ -1711,7 +1762,8 @@
                         <div class="works__item-advantages-item works__item-advantages-item_price">От 29 т.р.</div>
                         <div class="works__item-advantages-item works__item-advantages-item_popular">Хит</div>
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-42"></div>
+                    <div class="works-slider-min works-slider-min-42">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -1726,7 +1778,7 @@
                                 
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         Закаленная с облегченным кончиком настоящая сабля
@@ -1742,7 +1794,8 @@
                         <div class="works__item-advantages-item works__item-advantages-item_price">От 2 т.р.</div>
                         <!-- <div class="works__item-advantages-item works__item-advantages-item_popular">Хит</div> -->
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-43"></div>
+                    <div class="works-slider-min works-slider-min-43">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -1757,7 +1810,7 @@
                                 
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         Идеальный баланс
@@ -1773,7 +1826,8 @@
                         <div class="works__item-advantages-item works__item-advantages-item_price">От 2 т.р.</div>
                         <!-- <div class="works__item-advantages-item works__item-advantages-item_popular">Хит</div> -->
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-44"></div>
+                    <div class="works-slider-min works-slider-min-44">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -1788,7 +1842,7 @@
                                 
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         Проверены в деле профессионалами
@@ -1804,7 +1858,8 @@
                         <div class="works__item-advantages-item works__item-advantages-item_price">От 11 т.р.</div>
                         <!-- <div class="works__item-advantages-item works__item-advantages-item_popular">Хит</div> -->
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-45"></div>
+                    <div class="works-slider-min works-slider-min-45">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -1819,7 +1874,7 @@
                                 
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         Индивидуальные экземпляры
@@ -1835,7 +1890,8 @@
                         <div class="works__item-advantages-item works__item-advantages-item_price">От 3 т.р.</div>
                         <!-- <div class="works__item-advantages-item works__item-advantages-item_popular">Хит</div> -->
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-46"></div>
+                    <div class="works-slider-min works-slider-min-46">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -1850,7 +1906,7 @@
                                 
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         Ножны из натуральной кожи в подарок
@@ -1866,7 +1922,8 @@
                         <div class="works__item-advantages-item works__item-advantages-item_price">От 5 т.р.</div>
                         <!-- <div class="works__item-advantages-item works__item-advantages-item_popular">Хит</div> -->
                     </div>
-                    <div class="works-slider-min">
+                    <div class="works-slider-min-pagination works-slider-min-pagination-47"></div>
+                    <div class="works-slider-min works-slider-min-47">
                         <div class="swiper-wrapper">
                             <div class="works-slider-min__slide swiper-slide">
                                 <a href="#!">
@@ -1890,7 +1947,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="works-slider-min-pagination"></div>
+                        
                     </div>
                     <h3 class="works__item-title">
                         Точные копии
