@@ -619,6 +619,20 @@
             background-size: cover;
         }
     }
+    .masters-slider__controlls-sl{
+        position: relative;
+    
+        &::before{
+            content: '';
+            position: absolute;
+            left: 12px;
+            width: 100%;
+            max-width: calc(100% - 24px);
+            height: 100%;
+            background-color: transparent;
+            z-index: 2;
+        }
+    }
 }
 
 @media (max-width: 375px) {
